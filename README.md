@@ -42,18 +42,18 @@ Level 2 (执行层)
 
 ```
 game-dev-agent-v2/
-├── index.md              # 系统概览
-├── README.md             # 本文件
-├── ARCHITECTURE.md       # 详细架构
+├── README.md                    # 本文件
+├── USAGE.md                     # 使用指南（含完整Agent列表和示例Prompt）
+├── index.md                     # 系统概览
 ├── AGENTS/
-│   ├── 00_COMMAND.md     # 指挥中心
-│   ├── 01_STRATEGY.md    # 战略规划 (6个)
-│   ├── 02_PLANNING.md    # 项目规划 (8个)
-│   ├── 03_CREATIVE.md    # 创意设计 (10个)
-│   ├── 04_PROGRAMMING.md # 编程开发 (15个)
-│   └── 05_ART_AUDIO_OPS.md # 美术/音频/运营 (19个)
+│   ├── 00_COMMAND.md            # 指挥中心
+│   ├── 01_STRATEGY.md           # 战略规划 (6个)
+│   ├── 02_PLANNING.md           # 项目规划 (8个)
+│   ├── 03_CREATIVE.md           # 创意设计 (10个)
+│   ├── 04_PROGRAMMING.md        # 编程开发 (15个)
+│   └── 05_ART_AUDIO_OPS.md      # 美术/音频/运营 (19个)
 ├── WORKFLOWS/
-│   └── full_game_development.md  # 完整开发流程
+│   └── full_game_development.md # 完整开发流程
 └── USECASES/
     └── real_world_examples.md   # 实际应用案例
 ```
@@ -89,22 +89,18 @@ game-dev-agent-v2/
 
 ## 🚀 快速开始
 
-### 单Agent使用
-```markdown
-你是一个 [Agent角色]，请帮我完成 [具体任务]
+> 📖 **详细使用方法、完整 Agent 列表、示例 Prompt → [USAGE.md](./USAGE.md)**
 
-示例：
-你是一个 LevelDesigner，请为Roblox Obby游戏设计10个关卡
+### 单 Agent 使用
+```
+你是 LevelDesigner（关卡设计师），专注于 Roblox Obby 游戏设计。
+请为我设计 5 个难度递进的关卡，包含平台布局、障碍物类型和通关技巧。
 ```
 
-### 多Agent协作
-```markdown
-请帮我完成一个完整的游戏项目，包括：
-1. 市场调研和竞品分析
-2. 游戏设计和关卡规划
-3. 核心系统开发
-4. 美术资源制作
-5. 测试和发布
+### 多 Agent 协作
+```
+你是 GameDev Command Center（总指挥）。
+我需要开发一款休闲解谜游戏，请分解任务并指定每步负责的 Agent。
 ```
 
 ---
@@ -131,12 +127,6 @@ game-dev-agent-v2/
 - 规模化扩展：按需增加Agent能力
 
 ---
-
-## 📞 联系方式
-
-- **开发者**: 哈皮
-- **平台**: WorkBuddy
-- **更新日期**: 2026-05-20
 
 ---
 
